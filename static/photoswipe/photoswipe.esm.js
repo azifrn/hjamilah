@@ -3040,7 +3040,7 @@ function addElementHTML(htmlData) {
   //
   // Property shadowID defines ID of element that should be cloned.
   if (svgData.outlineID) {
-    out += '<use class="pswp__icn-shadow" xlink:href=".#' + svgData.outlineID + '"/>';
+    out += '<use class="pswp__icn-shadow" xlink:href="#' + svgData.outlineID + '"/>';
   }
 
   out += svgData.inner;
@@ -3183,7 +3183,7 @@ const arrowNext = {
   html: {
     isCustomSVG: true,
     size: 60,
-    inner: '<use xlink:href=".#pswp__icn-arrow"/>',
+    inner: '<use xlink:href="#pswp__icn-arrow"/>',
     outlineID: 'pswp__icn-arrow'
   },
   onClick: 'next',
